@@ -6,30 +6,33 @@ font-family: 'Space Mono', monospace;
 font-family: 'Vollkorn', serif;
 font-family: 'Zeyada', cursive;*/
 
-:root{
-	--color-negro:#222;
-	--menu-hover:#b68834;
-	--color-cafe:#b68834;
-	--color-gris:#777;
-	--fondo-header:#222;
-	--fondo-footer:#282932;
-	
+:root {
+	--color-negro: #222;
+	--menu-hover: #b68834;
+	--color-cafe: #b68834;
+	--color-gris: #777;
+	--fondo-header: #222;
+	--fondo-footer: #282932;
+
 }
-body{
+
+body {
 
 	font-size: 14px;
 }
-header{
+
+header {
 	position: relative;
 	background-color: var(--fondo-header);
 	background-image: url("../img/header-bg.jpg");
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	top:0;
+	top: 0;
 	border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
 }
-footer{
+
+footer {
 	background-color: var(--fondo-footer);
 	background-image: url("../img/footer-bg.jpg");
 	background-size: cover;
@@ -40,10 +43,12 @@ footer{
 	font-size: 13px;
 	font-weight: 600;
 }
-footer p span{
+
+footer p span {
 	color: var(--color-cafe);
 }
-footer #copy{
+
+footer #copy {
 	padding: 20px 0;
 	margin-top: 5%;
 	color: #fff;
@@ -53,14 +58,14 @@ footer #copy{
 .titulos {
 	font-family: 'Poppins', sans-serif;
 	color: var(--color-negro);
-	font-size: 2vw;
+	font-size: 2.5vw;
 	font-weight: bold;
 }
 
 .contenido {
 	font-family: 'Poppins', sans-serif;
 	color: var(--color-negro);
-	font-size: 1vw;
+	font-size: 1.3vw;
 }
 
 #hero {
@@ -80,7 +85,11 @@ footer #copy{
 
 .yellow-title {
 	color: var(--color-cafe);
-	font-size: 1.2vw;
+	font-size: 2vw;
+}
+
+.img-sign {
+	width: 30%;
 }
 
 .img-about {
@@ -88,13 +97,68 @@ footer #copy{
 }
 
 .sub-title {
-	font-size: 1.2vw;
+	font-size: 2vw;
 }
 
 #menu {
-
+	margin-bottom: 5vw !important;
 }
 
 .card {
 	width: 100% !important;
+}
+
+.card-price {
+	display: flex;
+	justify-content: space-between;
+}
+
+#kind {
+	margin-bottom: 5vw !important;
+}
+
+#blog {
+	margin-bottom: 5vw !important;
+	background-color: var(--color-gris);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+}
+
+#img-kind-1 {
+	margin: 5%;
+	width: 90%;
+	height: 90%;
+	grid-area: 1 / 1 / 5 / 5;
+}
+
+#img-kind-2 {
+	margin: 5%;
+	width: 90%;
+	height: 90%;
+	grid-area: 5 / 1 / 13 / 5;
+}
+
+#img-kind-3 {
+	margin: 5%;
+	width: 90%;
+	height: 90%;
+	grid-area: 1 / 5 / 9 / 13;
+}
+
+#img-kind-4 {
+	margin: 5%;
+	width: 90%;
+	height: 90%;
+	grid-area: 9 / 5 / 13 / 9;
+}
+
+#img-kind-5 {
+	margin: 5%;
+	width: 90%;
+	height: 90%;
+	grid-area: 9 / 9 / 13 / 13;
 }
